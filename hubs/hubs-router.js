@@ -34,7 +34,7 @@ router.get("/:id", (req, res) => {
     });
 });
 
-router.post("", (req, res) => {
+router.post("/", (req, res) => {
   Hubs.add(req.body)
     .then(hub => {
       res.status(201).json(hub);
@@ -86,12 +86,12 @@ router.put("/:id", (req, res) => {
 });
 
 // add an endpoint that returns all the messages for a hub
-router.get("/:id/messages", (req, res) => {});
-router.post("/:id/messages", (req, res) => {
-  const hubId = req.params.id;
-  const message = { ...req.body, hubId: req.params.id };
-});
-router.get("/:id/users", (req, res) => {});
+// router.get("/:id/messages", (req, res) => {});
+// router.post("/:id/messages", (req, res) => {
+//   const hubId = req.params.id;
+//   const message = { ...req.body, hubId: req.params.id };
+// });
+// router.get("/:id/users", (req, res) => {});
 // add an endpoint for adding new message to a hub
 
 module.exports = router;
