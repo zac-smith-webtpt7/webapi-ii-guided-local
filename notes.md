@@ -1,0 +1,10 @@
+# Routing Notes
+
+[ client ] == makes a request to an == [ api] == sends a response back to the == [ client ]
+
+what is the interface for a web api? ==>
+
+- URI (Uniform Resource Identifier)
+- URL (Universal Resource Locator)
+- Endpoint (very related to a URI)
+- HTTP === network protocol, set a rules for communication
